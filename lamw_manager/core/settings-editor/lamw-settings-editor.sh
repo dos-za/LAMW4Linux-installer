@@ -319,7 +319,7 @@ LAMW4LinuxPostConfig(){
 		"source $LAMW4LINUX_LOCAL_ENV"
 		"source $STARTUP_ERROR_LAMW4LINUX_PATH"
 		''
-		"exec \$LAMW4LINUX_EXE_PATH --pcp=\$LAMW_IDE_HOME_CFG \"\$@\""
+		"exec \$LAMW4LINUX_EXE_PATH --pcp=\$LAMW_IDE_HOME_CFG --name LAMW4Linux --sync \"\$@\""
 	)
 	
 	local lazbuild_str=(
