@@ -2,8 +2,8 @@
 #-------------------------------------------------------------------------------------------------#
 #Universidade federal de Mato Grosso (Alma Mater)
 #Course: Science Computer
-#Version: 0.6.8
-#Date: 10/13/2024
+#Version: 0.6.9
+#Date: 01/12/2025
 #Description: This script generates compiles LAMW Manager source code into an executable installer.
 #Note: This script requires makeself, read more in https://makeself.io/
 #-------------------------------------------------------------------------------------------------#
