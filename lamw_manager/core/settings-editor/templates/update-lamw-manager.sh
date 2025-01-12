@@ -61,7 +61,7 @@ checkLAMWManageUpdates(){
 	)
 
 	local lamw_manager_current_version=$(
-		grep  "^Generate LAMW_INSTALL_VERSION=" $ANDROID_HOME/lamw4linux/lamw-install.log |
+		grep  "^Generate LAMW_INSTALL_VERSION=" $ROOT_LAMW/lamw4linux/lamw-install.log |
 		awk -F= '{  print $2 }'
 	)
 

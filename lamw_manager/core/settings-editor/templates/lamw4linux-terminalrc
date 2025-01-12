@@ -2,8 +2,8 @@
 
 #Run emulator 
 emulator(){
-	local new_emulator="$ANDROID_SDK_ROOT/emulator/emulator"
-	local old_emulator="$ANDROID_SDK_ROOT/tools/emulator"
+	local new_emulator="$ANDROID_HOME/emulator/emulator"
+	local old_emulator="$ANDROID_HOME/tools/emulator"
 	
 	if [ -e "$new_emulator" ]; then
 		$new_emulator "$@"
@@ -106,15 +106,15 @@ DowngradleAllProjectsFromLAMWWorkspace(){
 
 generateSDKToolsCommands(){
 	local cmdline_path="cmdline-tools/latest/bin"
-	if [ -e $ANDROID_SDK_ROOT/$cmdline_path ]; then 
-		cd 	$ANDROID_SDK_ROOT/$cmdline_path
+	if [ -e $ANDROID_HOME/$cmdline_path ]; then 
+		cd 	$ANDROID_HOME/$cmdline_path
 	else 
 		cmdline_path="tools/bin"
-		cd $ANDROID_SDK_ROOT/$cmdline_path
+		cd $ANDROID_HOME/$cmdline_path
 	fi
 		
 	for i in *; do
-		eval "function $i { \"\$ANDROID_SDK_ROOT/$cmdline_path/$i\" \"\$@\" ; }"
+		eval "function $i { \"\$ANDROID_HOME/$cmdline_path/$i\" \"\$@\" ; }"
 		export -f $i
 	done
 }
