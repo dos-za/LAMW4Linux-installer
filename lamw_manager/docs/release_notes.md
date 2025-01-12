@@ -10,6 +10,7 @@ Latest
 **News**
 +	Migrate to Lazarus 3.6
 +	Replace *ANDROID_SDK_ROOT* to ANDROID_HOME ( to work with new gradle version)
+
 **Note**: Auto uninstall of old freepascal and Lazarus (transitional code of lamw_manager) will be removed on next release.
 
 
