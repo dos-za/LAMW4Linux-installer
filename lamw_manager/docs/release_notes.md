@@ -5,6 +5,14 @@ This page contains information about new features and bug fixes.
 Latest
 ---
 
+### v0.6.9 - 12 Jan, 2025 ### 
+
+**News**
++	Migrate to Lazarus 3.6
++	Replace *ANDROID_SDK_ROOT* to ANDROID_HOME ( to work with new gradle version)
+**Note**: Auto uninstall of old freepascal and Lazarus (transitional code of lamw_manager) will be removed on next release.
+
+
 ### v0.6.8 - 14 Oct, 2024 ###
 
 **News**
